@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #5a4a42;
+  background: #faf8f6;
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Beautiful background patterns */
+.bg-pattern-1 {
+  background: linear-gradient(135deg, #faf8f6 0%, #f5f0eb 50%, #faf8f6 100%);
+}
+
+.bg-pattern-2 {
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(212, 165, 116, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(212, 165, 116, 0.05) 0%, transparent 50%),
+    linear-gradient(135deg, #faf8f6 0%, #f5f0eb 100%);
+}
+
+.bg-pattern-3 {
+  background-image: 
+    repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(212, 165, 116, 0.03) 35px, rgba(212, 165, 116, 0.03) 70px);
+  background-color: #faf8f6;
+}
+
+.bg-gradient-warm {
+  background: linear-gradient(180deg, 
+    rgba(250, 248, 246, 1) 0%, 
+    rgba(245, 240, 235, 0.8) 50%, 
+    rgba(250, 248, 246, 1) 100%
+  );
+}
+
+.bg-subtle-dots {
+  background-image: radial-gradient(rgba(212, 165, 116, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-color: #faf8f6;
+}
+
+/* Loading states */
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 18px;
+  color: #8a7a72;
+  font-style: italic;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.section-spacing {
+  padding: 80px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+  
+  .section-spacing {
+    padding: 40px 0;
+  }
+}

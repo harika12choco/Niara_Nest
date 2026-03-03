@@ -1,0 +1,77 @@
+/* Shop.css */
+.shop-page {
+  min-height: 80vh;
+  padding: 60px;
+  background: 
+    repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(212, 165, 116, 0.02) 35px, rgba(212, 165, 116, 0.02) 70px),
+    linear-gradient(180deg, #faf8f6 0%, #f5f0eb 50%, #faf8f6 100%);
+}
+
+.shop-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.shop-header h1 {
+  font-size: 48px;
+  font-weight: 300;
+  font-style: italic;
+  color: #5a4a42;
+  margin-bottom: 16px;
+}
+
+.shop-header p {
+  font-size: 18px;
+  color: #8a7a72;
+  font-style: italic;
+}
+
+.shop-filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: white;
+  border: 2px solid rgba(212, 165, 116, 0.2);
+  padding: 12px 28px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Georgia', serif;
+  color: #5a4a42;
+  border-radius: 25px;
+}
+
+.filter-btn:hover {
+  border-color: #d4a574;
+  background: rgba(212, 165, 116, 0.05);
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, #d4a574 0%, #c49564 100%);
+  color: white;
+  border-color: #d4a574;
+  box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
+}
+
+.no-products {
+  text-align: center;
+  padding: 60px;
+  color: #8a7a72;
+  font-style: italic;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .shop-page {
+    padding: 40px 30px;
+  }
+
+  .shop-header h1 {
+    font-size: 36px;
+  }
+}
